@@ -27,8 +27,6 @@
                             <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                             @if (Request.IsAuthenticated) {
                                 <li>@Html.ActionLink("Sell", "Index", "Sell")</li>
-                                <li>@Html.ActionLink("View Cart", "DisplayCart", "ShoppingCart")</li>
-                                <li>@Html.ActionLink("My Account", "GetTransactionHistory", "Checkout")</li>
                             }
                         </ul>
                     </nav>

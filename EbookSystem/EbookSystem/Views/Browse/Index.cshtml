@@ -11,7 +11,7 @@
 <p>
     @using (Html.BeginForm("SearchIndex", "Browse", FormMethod.Get))
     {
-    <p>
+    <p> 
         Title: @Html.TextBox("SearchString")
         <input type="submit" value="Filter" />
     </p>
@@ -70,7 +70,8 @@
             @Html.DisplayFor(modelItem => item.Comment)
         </td>
             <td>
-                @Html.ActionLink("Details", "Details", new { id = item.ID })
+                @Html.ActionLink("Details", "Details", new { id = item.ID })|
+                @Html.ActionLink("Order", "Order", new { id = item.ID })
             </td>
         </tr>
     }

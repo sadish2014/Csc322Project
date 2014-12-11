@@ -20,8 +20,8 @@ namespace EbookSystem.Controllers
         {
             return View(db.Sell.ToList());
         }
-
-        public ActionResult SearchIndex(string searchString)
+       
+       public ActionResult SearchIndex(string searchString)
         {
             var books  = from m in db.Sell
                          select m;
@@ -33,6 +33,7 @@ namespace EbookSystem.Controllers
 
             return View(books);
         }
+     
         public ActionResult Details(int id = 0)
         {
             Sell sell = db.Sell.Find(id);
@@ -41,6 +42,10 @@ namespace EbookSystem.Controllers
                 return HttpNotFound();
             }
             return View(sell);
+        }
+        public ActionResult Order()
+        {
+            return View();
         }
         public ActionResult Comment()
         {

@@ -299,6 +299,7 @@
     <Content Include="Views\Browse\Details.cshtml" />
     <Content Include="Views\Sell\Comment.cshtml" />
     <Content Include="Views\Browse\Comment.cshtml" />
+    <Content Include="Views\Browse\Order.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

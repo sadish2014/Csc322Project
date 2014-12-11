@@ -9,8 +9,9 @@
 <p>
     @using (Html.BeginForm("SearchIndex", "Browse", FormMethod.Get))
     {
-    <p>
+     <p>
         Title: @Html.TextBox("SearchString")
+
         <input type="submit" value="Filter" />
     </p>
     }

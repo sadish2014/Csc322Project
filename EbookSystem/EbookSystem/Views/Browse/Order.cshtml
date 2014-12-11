@@ -1,0 +1,18 @@
+﻿@model EbookSystem.Models.Sell
+@{
+    ViewBag.Title = "Order";
+}
+
+ <h2>Order</h2>
+
+    @if (Request.IsAuthenticated)
+    {
+        <h4>You have added an item in your cart</h4>
+    }
+else{<h3>You have to log in to place an order. Please Log in!!
+            </h3>
+    }
+
+    <p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
